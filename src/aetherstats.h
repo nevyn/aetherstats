@@ -3,8 +3,10 @@
 class AetherStats
 {
 public:
+    
     void main();
+    void connect(const char* host);
 private:
-    bool show_demo_window = true;
-    bool show_another_window = false;
+    bool autoconnect;
+    char destination[255] = "";
 };
